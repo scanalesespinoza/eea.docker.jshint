@@ -1,12 +1,11 @@
 # Docker image for JSHint checker
 
-[JSHint](http://jshint.com/) is a community-driven tool to detect errors and potential problems in JavaScript code  
+[JSHint](http://jshint.com/) is a community-driven tool to detect errors and potential problems in JavaScript code
 
 ## Supported tags and respective `Dockerfile` links
 
 - [`latest` (*Dockerfile*)](https://github.com/eea/eea.docker.jshint/blob/master/Dockerfile)
-- [`2.9.5.1` (*Dockerfile*)](https://github.com/eea/eea.docker.jshint/blob/2.9.5.1/Dockerfile)
-- [`2.9.5` (*Dockerfile*)](https://github.com/eea/eea.docker.jshint/blob/2.9.5/Dockerfile)
+- [`2.9.5.2` (*Dockerfile*)](https://github.com/eea/eea.docker.jshint/blob/2.9.5.2/Dockerfile)
 
 ## Usage
 
