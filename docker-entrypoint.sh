@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-CMD="$@"
+CMD="jshint"
 
 if [[ ${CMD:0:4} = "http" ]]; then
   GIT_SRC=$@
@@ -39,7 +39,7 @@ if [ -z "$PARAMS" ]; then
 fi
 
 if [ "$CMD" = "jshint" ]; then
-  jshint $PARAMS /code
+  jshint $PARAMS "/tmp/$GIT_NAME"
 else
   exec "$@"
 fi
