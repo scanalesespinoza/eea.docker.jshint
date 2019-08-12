@@ -14,7 +14,7 @@ if [[ ${CMD:0:3} = "git" ]]; then
 fi
 
 if [ ! -z "$GIT_SRC" ]; then
-  cd /code
+  cd
   git clone $GIT_SRC
   if [ ! -z "$GIT_NAME" ]; then
      if [ -z "$GIT_BRANCH" ]; then
@@ -26,7 +26,7 @@ if [ ! -z "$GIT_SRC" ]; then
         git fetch origin pull/$GIT_CHANGE_ID/head:$GIT_BRANCH
      fi
      git checkout $GIT_BRANCH
-     cd /code
+     cd
   fi
 fi
 
