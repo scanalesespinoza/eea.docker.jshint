@@ -41,9 +41,4 @@ fi
 if [ "$CMD" = "jshint" ]; then
   jshint $PARAMS "/tmp/$GIT_NAME" & PID=$!
   echo "GIT NAME ES: $GIT_NAME  + exit code: $? + PID: $PID"
-  ls -la "/tmp/$GIT_NAME"
-  ps aux
-else
-  exec "$@"
 fi
-kill -s SIGINT $PID
