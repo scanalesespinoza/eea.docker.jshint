@@ -40,6 +40,7 @@ fi
 echo "lolo"
 if [ "$CMD" = "jshint" ]; then
   jshint $PARAMS "/tmp/$GIT_NAME"
+  echo "GIT NAME ES: $GIT_NAME  + exit code: $?"
   echo "lala"
 else
   exec "$@"
