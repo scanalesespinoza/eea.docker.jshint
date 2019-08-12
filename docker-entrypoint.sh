@@ -37,9 +37,10 @@ fi
 if [ -z "$PARAMS" ]; then
   PARAMS="--exclude **/_static/*.js"
 fi
-
+echo "lolo"
 if [ "$CMD" = "jshint" ]; then
   jshint $PARAMS "/tmp/$GIT_NAME"
+  echo "lala"
 else
   exec "$@"
 fi
