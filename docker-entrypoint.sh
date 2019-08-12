@@ -39,10 +39,11 @@ if [ -z "$PARAMS" ]; then
 fi
 
 if [ "$CMD" = "jshint" ]; then
-  jshint $PARAMS "/tmp/$GIT_NAME"
+  jshint $PARAMS "/tmp/$GIT_NAME" & PID=$!
   echo "GIT NAME ES: $GIT_NAME  + exit code: $?"
   ls -la "/tmp/$GIT_NAME"
+  ps aux
 else
   exec "$@"
 fi
-exit 0
+kill -s SIGINT $PID
