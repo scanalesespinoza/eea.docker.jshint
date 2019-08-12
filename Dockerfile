@@ -10,4 +10,3 @@ RUN apk add --no-cache --virtual .run-deps nodejs git \
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["jshint"]
